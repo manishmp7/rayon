@@ -1,6 +1,10 @@
 /*global $, document, window, lightbox, setTimeout, jQuery, makeItFixed*/
 $(document).ready(function () {
-
+	$('.NAVtoggle').click(function() {
+		$(this).toggleClass('active');
+		$('#overlay').toggleClass('open');
+	});
+	
     'use strict';
 
     // ------------------------------------------------------- //
